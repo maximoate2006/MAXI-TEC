@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAXI-TEC | Software y Sitios Web a Medida</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="particles"></div>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">MAXI-TEC</h1>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#tecnologias">Tecnologías</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <span class="tag">DESARROLLO PROFESIONAL</span>
+            <h2>Software y <span>sitios web</span><br>a medida</h2>
+            <p>Diseñamos y desarrollamos soluciones digitales modernas, rápidas y escalables para empresas, emprendedores y profesionales.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">Solicitar Presupuesto</a>
+                <a href="#portfolio" class="btn-secondary">Ver Proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="section">
+        <h2 class="section-title">Servicios</h2>
+        <div class="cards">
+            <div class="card reveal">
+                <div class="icon">💻</div>
+                <h3>Diseño Web</h3>
+                <p>Sitios web modernos, responsivos y optimizados para todos los dispositivos.</p>
+            </div>
+            <div class="card reveal">
+                <div class="icon">⚙️</div>
+                <h3>Desarrollo de Software</h3>
+                <p>Sistemas personalizados para automatizar procesos y mejorar la productividad.</p>
+            </div>
+            <div class="card reveal">
+                <div class="icon">🔧</div>
+                <h3>Mantenimiento Web</h3>
+                <p>Actualizaciones, seguridad, optimización y soporte continuo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h2 class="section-title">Proyectos</h2>
+        <div class="portfolio">
+            <div class="project reveal">
+                <h3>Sistema de Gestión Comercial</h3>
+                <p>Control de clientes, ventas e inventario.</p>
+            </div>
+            <div class="project reveal">
+                <h3>Plataforma de Reservas</h3>
+                <p>Reservas online con administración integrada.</p>
+            </div>
+            <div class="project reveal">
+                <h3>Sitio Corporativo</h3>
+                <p>Presencia digital profesional para empresas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologias" class="section">
+        <h2 class="section-title">Tecnologías</h2>
+        <div class="tech-grid">
+            <div class="tech reveal">HTML5</div>
+            <div class="tech reveal">CSS3</div>
+            <div class="tech reveal">JavaScript</div>
+            <div class="tech reveal">Python</div>
+            <div class="tech reveal">MySQL</div>
+            <div class="tech reveal">Git</div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <h2 class="section-title">Contacto</h2>
+        <form class="contact-form" action="https://formspree.io/f/tu_id_formspree" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="hidden" name="_replyto" value="maximoate2006@gmail.com">
+            <textarea name="mensaje" placeholder="Cuéntame sobre tu proyecto" rows="6" required></textarea>
+            <button type="submit" class="btn-primary">Enviar Consulta</button>
+        </form>
+    </section>
+
+    <footer>
+        <h3>MAXI-TEC</h3>
+        <p>Software y sitios web a medida.</p>
+        <span>© 2026 Todos los derechos reservados.</span>
+    </footer>
+
+    <div id="chatbot-toggle" class="whatsapp">💬</div>
+
+    <div id="chatbot-container" class="chatbot-window hidden">
+        <div class="chatbot-header">
+            <h4>Asistente MAXI-TEC</h4>
+            <span id="chatbot-close">✕</span>
+        </div>
+        <div id="chatbot-messages" class="chatbot-messages">
+            </div>
+        <div class="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Escribe tu respuesta aquí...">
+            <button id="chatbot-send">Enviar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
