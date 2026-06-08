@@ -254,3 +254,39 @@ footer{
 .map-container h3 span {
     color: #FF0000;
 }
+
+.bio-container {
+    margin-top: 50px;
+    padding: 30px;
+    background: rgba(13, 27, 42, 0.8);
+    border: 1px solid rgba(0, 168, 255, 0.3);
+    border-radius: 15px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.bio-container p {
+    margin: 15px 0;
+    color: #ccc;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #00A8FF;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: white;
+    text-shadow: 0 0 10px #00A8FF;
+}
