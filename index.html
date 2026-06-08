@@ -147,7 +147,7 @@
 
         <h2 class="section-title">Contacto</h2>
 
-        <form class="contact-form">
+        <form class="contact-form" action="https://formspree.io/f/TU_ID_DE_FORMULARIO" method="POST">
 
             <input
                 type="text"
@@ -155,17 +155,9 @@
                 required
             >
 
-            <input
-                type="email"
-                placeholder="Correo electrónico"
-                required
-            >
-
-            <textarea
-                placeholder="Cuéntame sobre tu proyecto"
-                rows="6"
-                required
-            ></textarea>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <textarea name="mensaje" placeholder="Cuéntame sobre tu proyecto" rows="6" required></textarea>
 
             <button type="submit" class="btn-primary">
                 Enviar Consulta
@@ -189,13 +181,7 @@
 
     </footer>
 
-    <a
-       href="https://wa.me/549TU_NUMERO"
-       class="whatsapp"
-       target="_blank">
-       💬
-    </a>
-
+   <a href="https://wa.me/5493804886019" class="whatsapp" target="_blank">
     <script src="script.js"></script>
 
 </body>
