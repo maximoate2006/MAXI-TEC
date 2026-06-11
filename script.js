@@ -38,4 +38,4 @@ const imagenesAtom = [
 ];
 
 
-loadStaticGallery(imagenesAtom, "imagenes/atom/", "atom-preview");
+loadStaticGallery(imagenesAtom, "Evidencias/atom/", "atom-preview");
