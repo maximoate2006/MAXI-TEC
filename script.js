@@ -33,7 +33,7 @@ function loadStaticGallery(imagesArray, folderPath, previewId) {
 }
 
 const imagenesAtom = [
-    "ATOM 1.jpg",
+    "ATOM 1.png",
     "ATOM 2.png",
 ];
 
