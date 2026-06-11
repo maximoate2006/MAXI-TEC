@@ -290,3 +290,18 @@ footer{
     color: white;
     text-shadow: 0 0 10px #00A8FF;
 }
+
+.notebook-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+    background: #0D1B2A;
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.notebook-container.open {
+    max-height: 2000px; /* Expansión máxima adaptativa */
+    transition: max-height 0.8s ease-in-out;
+    padding: 30px;
+}
