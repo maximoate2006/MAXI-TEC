@@ -1,4 +1,3 @@
-
 const projectsBtn = document.getElementById("projects-btn");
 const projectsNotebook = document.getElementById("projects-notebook");
 const reveals = document.querySelectorAll(".reveal");
@@ -11,7 +10,6 @@ if (projectsBtn && projectsNotebook) {
     });
 }
 
-
 window.addEventListener("scroll", () => {
     reveals.forEach(element => {
         const top = element.getBoundingClientRect().top;
@@ -21,29 +19,23 @@ window.addEventListener("scroll", () => {
     });
 });
 
-function setupGallery(inputId, previewId) {
-    const input = document.getElementById(inputId);
+function loadStaticGallery(imagesArray, folderPath, previewId) {
     const preview = document.getElementById(previewId);
-
-    if (input && preview) {
-        input.addEventListener('change', (event) => {
-            const files = event.target.files;
-            for (let i = 0; i < files.length; i++) {
-                const file = files[i];
-                if (file.type.startsWith('image/')) {
-                    const reader = new FileReader();
-                    reader.onload = function(e) {
-                        const img = document.createElement('img');
-                        img.src = e.target.result;
-                        img.alt = "Captura de evidencia del proyecto";
-                        preview.appendChild(img);
-                    };
-                    reader.readAsDataURL(file);
-                }
-            }
+    if (preview) {
+        preview.innerHTML = ""; 
+        imagesArray.forEach(imageName => {
+            const img = document.createElement('img');
+            img.src = `${folderPath}${imageName}`; 
+            img.alt = `Evidencia del proyecto: ${imageName}`;
+            preview.appendChild(img);
         });
     }
 }
 
+const imagenesAtom = [
+    "ATOM 1.jpg",
+    "ATOM 2.png",
+];
 
-setupGallery('atom-input', 'atom-preview');
+
+loadStaticGallery(imagenesAtom, "imagenes/atom/", "atom-preview");
