@@ -144,27 +144,78 @@
                 <p>Haga clic para ver en Google Maps</p>
             </div>
     </a>
-    <div class="references-wrapper">
-    <div class="map-container reveal" id="notebook-trigger">
-        <h3>ATOM<span>GYM</span></h3>
-        <p>Haga clic para abrir el historial del proyecto (Modo Libreta)</p>
-    </div>
+    <section id="referencias" class="section">
+        <h3 class="projects-trigger reveal" id="projects-btn">
+            Ver Proyectos Realizados <span class="arrow-icon">▼</span>
+        </h3>
 
-    <div class="notebook-container" id="notebook-window">
-        <div class="notebook-layout">
-            <div class="notebook-index">
-                <h3>Índice</h3>
-                <ul>
-                    <li><a href="#desc-p">Descripción</a></li>
-                    <li><a href="#tareas-p">Tareas Ejecutadas</a></li>
-                    <li><a href="#galeria-p">Galería de Evidencias</a></li>
-                </ul>
-            </div>
-            <div class="notebook-content">
+        <div class="notebook-container" id="projects-notebook">
+            
+            <div class="project-block">
+                <div class="notebook-layout">
+                    
+                    <div class="notebook-index">
+                        <h3>ATOM<span>GYM</span></h3>
+                        <ul>
+                            <li><a href="#atom-desc">Descripción</a></li>
+                            <li><a href="#atom-tareas">Tareas Ejecutadas</a></li>
+                            <li><a href="#atom-galeria">Galería</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="notebook-content">
+                        <h4 id="atom-desc">Ecosistema Digital Integrado</h4>
+                        <p>Desarrollo de landing page corporativa orientada a la conversión de usuarios y optimización del posicionamiento local.</p>
+                        
+                        <h4 id="atom-tareas">Tareas Ejecutadas:</h4>
+                        <ul>
+                            <li>Diseño de interfaz de usuario en modo oscuro con acentos de alta visibilidad.</li>
+                            <li>Modelado de flujos de interacción para derivación directa a canales de atención rápida.</li>
+                            <li>Estructuración de mapas de ubicación georreferenciados.</li>
+                        </ul>
+
+                        <div class="gallery-section" id="atom-galeria">
+                            <h5>Evidencias de ATOM GYM</h5>
+                            <div class="image-uploader-box" onclick="document.getElementById('atom-input').click()">
+                                <p>📷 Cargar capturas del proyecto</p>
+                                <input type="file" id="atom-input" accept="image/*" multiple>
+                            </div>
+                            <div class="gallery-grid" id="atom-preview"></div>
+                        </div>
+                    </div>
+
                 </div>
+            </div>
+
+            <hr class="project-divider">
+
+            <div class="project-block">
+                <div class="notebook-layout">
+                    <div class="notebook-index">
+                        <h3>PRÓXIMO<span>PROYECTO</span></h3>
+                        <ul>
+                            <li><a href="#p2-desc">Descripción</a></li>
+                            <li><a href="#p2-galeria">Galería</a></li>
+                        </ul>
+                    </div>
+                    <div class="notebook-content">
+                        <h4 id="p2-desc">Nombre del Software o Sitio Web</h4>
+                        <p>Espacio reservado para detallar el próximo sistema personalizado, automatización de procesos o sitio web responsivo que desarrolles.</p>
+                        
+                        <div class="gallery-section" id="p2-galeria">
+                            <h5>Evidencias del Proyecto</h5>
+                            <div class="image-uploader-box" onclick="document.getElementById('p2-input').click()">
+                                <p>📷 Cargar capturas del proyecto</p>
+                                <input type="file" id="p2-input" accept="image/*" multiple>
+                            </div>
+                            <div class="gallery-grid" id="p2-preview"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
-</div>
+    </section>
         </section>
 
     <footer>

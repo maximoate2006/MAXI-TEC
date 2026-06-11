@@ -291,17 +291,200 @@ footer{
     text-shadow: 0 0 10px #00A8FF;
 }
 
+/* Estilos del Subtítulo Disparador */
+.projects-trigger {
+    text-align: center;
+    font-size: 1.3rem; /* Tamaño mediano/pequeño pero elegante */
+    font-weight: 500;
+    color: #00A8FF;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 auto 30px auto;
+    width: 100%;
+    transition: 0.3s ease;
+    user-select: none;
+}
+
+.projects-trigger:hover {
+    color: white;
+    text-shadow: 0 0 15px rgba(0, 168, 255, 0.6);
+}
+
+.projects-trigger .arrow-icon {
+    font-size: 0.9rem;
+    margin-left: 8px;
+    display: inline-block;
+    transition: transform 0.4s ease;
+}
+
+/* Rotación del indicador visual al abrirse */
+.projects-trigger.active-trigger .arrow-icon {
+    transform: rotate(180deg);
+    color: #FF0000;
+}
+
+/* Contenedor General estilo Libreta (Oculto por defecto) */
 .notebook-container {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+    transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     background: #0D1B2A;
-    border: 1px solid rgba(255, 0, 0, 0.2);
+    border: 1px solid rgba(0, 168, 255, 0.1);
     border-radius: 15px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .notebook-container.open {
-    max-height: 2000px; /* Expansión máxima adaptativa */
-    transition: max-height 0.8s ease-in-out;
-    padding: 30px;
+    max-height: 4000px; /* Margen amplio para albergar múltiples proyectos */
+    padding: 40px 30px;
+    border-color: rgba(0, 168, 255, 0.3);
+}
+
+/* Separación interna de proyectos */
+.project-block {
+    margin-bottom: 40px;
+}
+
+.project-divider {
+    border: none;
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    margin: 40px 0;
+}
+
+/* Grid Interno del Proyecto */
+.notebook-layout {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 30px;
+    text-align: left;
+}
+
+.notebook-index {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding-right: 20px;
+}
+
+.notebook-index h3 {
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.notebook-index h3 span {
+    color: #00A8FF; /* Color identitario tecnológico por defecto */
+}
+
+/* Personalización de color específica para el bloque de ATOM GYM */
+.project-block:nth-child(1) .notebook-index h3 span {
+    color: #FF0000; /* Rojo característico de ATOM GYM */
+}
+
+.notebook-index ul {
+    list-style: none;
+}
+
+.notebook-index ul li {
+    margin-bottom: 10px;
+}
+
+.notebook-index ul li a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.notebook-index ul li a:hover {
+    color: #00A8FF;
+    padding-left: 5px;
+}
+
+.notebook-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.notebook-content p, .notebook-content ul {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.notebook-content ul {
+    padding-left: 20px;
+}
+
+/* Módulo de Galería Dinámica */
+.gallery-section {
+    margin-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 20px;
+}
+
+.gallery-section h5 {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.image-uploader-box {
+    border: 2px dashed rgba(0, 168, 255, 0.2);
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(7, 17, 31, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.image-uploader-box:hover {
+    border-color: #00A8FF;
+    background: rgba(0, 168, 255, 0.05);
+}
+
+.image-uploader-box input[type="file"] {
+    display: none;
+}
+
+.image-uploader-box p {
+    color: #888;
+    font-size: 0.85rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    border-color: #00A8FF;
+}
+
+/* Responsivo para Teléfonos */
+@media(max-width: 768px) {
+    .notebook-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .notebook-index {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-right: 0;
+        padding-bottom: 15px;
+    }
 }
