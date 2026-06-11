@@ -1,13 +1,13 @@
 const reveals = document.querySelectorAll(".reveal");
-const gallertpreview = document.querySelectorAll(".gallery-preview");
-const imaginmput = document.querySelector(".imagin-input");
-const proyectsBtn = document.querySelector(".proyects-btn");
-const projectsNoreboock = document.querySelector(".projects-norebook");
+const galleryPreviews = document.querySelectorAll(".gallery-preview");
+const imageInput = document.querySelector(".image-input");
+const projectsBtn = document.querySelector(".projects-btn");
+const projectsNotebook = document.querySelector(".projects-notebook");
 
-proyectsBtn.addEventListener("click", () => {
-    projectsNoreboock.classList.toggle("active");
+projectsBtn.addEventListener('click', () => {
+    projectsNotebook.classList.toggle('open');
+    projectsBtn.classList.toggle('active-trigger');
 });
-
 window.addEventListener("scroll", () => {
 
     reveals.forEach(element => {
