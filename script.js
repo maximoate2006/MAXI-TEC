@@ -1,27 +1,28 @@
 const reveals = document.querySelectorAll(".reveal");
 const galleryPreviews = document.querySelectorAll(".gallery-preview");
 const imageInput = document.querySelector(".image-input");
-const projectsBtn = document.querySelector(".projects-btn");
-const projectsNotebook = document.querySelector(".projects-notebook");
+const projectsBtn = document.getElementById("projects-btn");
+const projectsNotebook = document.getElementById("projects-notebook");
+const reveals = document.querySelectorAll(".reveal");
 
-projectsBtn.addEventListener('click', () => {
-    projectsNotebook.classList.toggle('open');
-    projectsBtn.classList.toggle('active-trigger');
-});
+if (projectsBtn && projectsNotebook) {
+    projectsBtn.addEventListener("click", () => {
+        projectsNotebook.classList.toggle("open");
+        projectsBtn.classList.toggle("active-trigger");
+    });
+}
+
+// Control de animaciones por desplazamiento (Scroll)
 window.addEventListener("scroll", () => {
-
     reveals.forEach(element => {
-
         const top = element.getBoundingClientRect().top;
-
-        if(top < window.innerHeight - 100){
+        if (top < window.innerHeight - 100) {
             element.classList.add("active");
         }
-
     });
-
 });
 
+// Función encapsulada para el procesamiento y previsualización local de imágenes
 function setupGallery(inputId, previewId) {
     const input = document.getElementById(inputId);
     const preview = document.getElementById(previewId);
@@ -45,3 +46,7 @@ function setupGallery(inputId, previewId) {
         });
     }
 }
+
+// Inicialización de los módulos de carga de forma independiente
+setupGallery('atom-input', 'atom-preview');
+setupGallery('p2-input', 'p2-preview');
