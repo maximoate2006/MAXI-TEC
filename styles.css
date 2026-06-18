@@ -113,6 +113,7 @@ body{
     margin-bottom:50px;
 }
 
+
 .cards,
 .portfolio,
 .tech-grid{
@@ -469,4 +470,162 @@ footer{
         padding-right: 0;
         padding-bottom: 15px;
     }
+}
+
+/* ===== Todo lo anterior se mantiene igual ===== */
+/* Solo agrego las siguientes reglas al final del archivo */
+
+/* Enlace del footer con derechos reservados */
+.footer-legal {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s, text-shadow 0.3s;
+    cursor: pointer;
+}
+
+.footer-legal:hover {
+    color: #00A8FF;
+    text-shadow: 0 0 10px rgba(0, 168, 255, 0.4);
+}
+
+/* Overlay del modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(7, 17, 31, 0.85);
+    backdrop-filter: blur(8px);
+    display: none; /* oculto por defecto */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+/* Panel del modal */
+.modal-content {
+    background: #07111F;
+    border: 1px solid rgba(0, 168, 255, 0.3);
+    border-radius: 20px;
+    max-width: 700px;
+    width: 100%;
+    max-height: 90vh;
+    padding: 40px 35px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow-y: auto;
+    color: #eee;
+}
+
+/* Botón de cierre (X) */
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.3s;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: #00A8FF;
+}
+
+/* Título del modal */
+.modal-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00A8FF;
+    border-bottom: 1px solid rgba(0, 168, 255, 0.2);
+    padding-bottom: 15px;
+}
+
+/* Cuerpo del modal (scroll interno si es necesario) */
+.modal-body {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #ccc;
+}
+
+.modal-body h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.modal-body p {
+    margin-bottom: 15px;
+}
+
+.modal-body strong {
+    color: #fff;
+}
+
+/* Ajustes responsive */
+@media (max-width: 600px) {
+    .modal-content {
+        padding: 30px 20px;
+    }
+    .modal-content h2 {
+        font-size: 1.6rem;
+    }
+}
+.contact-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555; 
+    margin-bottom: 2rem; 
+}
+.bg-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    background-image: url('https://i0.wp.com/cinde.es/blog/wp-content/uploads/2017/10/giphy.gif?resize=500%2C281');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15; 
+    pointer-events: none; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8%;   
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(15px);
+    background: rgba(7, 17, 31, .8);
+    z-index: 1000;
+}
+
+.logo {
+    color: #00A8FF;
+    font-size: 1.6rem;   
+    display: flex;       
+    align-items: center;
+    gap: 10px;          
+}
+
+.logo-gif {
+    width: 4.4rem;   
+    height: auto;
+    border-radius: 4px;
+    vertical-align: middle;
 }

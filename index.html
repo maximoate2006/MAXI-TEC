@@ -16,9 +16,18 @@
 
     <div class="particles"></div>
 
+    <div class="bg-gif"></div>
+
+
     <header>
         <nav class="navbar">
-            <h1 class="logo">MAXI-TEC</h1>
+            
+            <h1 class="logo">
+                <img src="https://miro.medium.com/v2/1*YF4KdQE-RadFtNa6n66wdg.gif" 
+                alt="IA" 
+                class="logo-gif">
+                
+                MAXI-TEC</h1>
 
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
@@ -48,7 +57,7 @@
 
             <div class="hero-buttons">
                 <a href="#contacto" class="btn-primary">
-                    Solicitar Presupuesto
+                    Contactar Ahora
                 </a>
             </div>
 
@@ -122,20 +131,23 @@
 
     <section id="contacto" class="section">
 
-        <h2 class="section-title">Contacto</h2>
+    <h2 class="section-title">Contacto</h2>
+    <p class="contact-subtitle">
+        Hablemos de tu emprendimiento <br>
+    </p>
 
     <form class="contact-form" action="https://formspree.io/f/mlgkbkok" method="POST">
-            <input type="text" name="nombre" placeholder="Nombre" required>
-            <input type="email" name="email" placeholder="Correo electrónico" required>
-            <textarea name="mensaje" placeholder="Cuéntame sobre tu proyecto" rows="6" required></textarea>
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico (opcional)">
+        <input type="tel" name="telefono" placeholder="Teléfono (opcional)">
+        <textarea name="mensaje" placeholder="Cuéntame sobre tu idea" rows="6" required></textarea>
 
-            <button type="submit" class="btn-primary">
-                Enviar Consulta
+        <button type="submit" class="btn-primary">
+            Enviar Consulta
         </button>
-
     </form>
 
-    </section>
+</section>
 
     <section id="referencias" class="section">
         <h2 class="section-title">REFERENCIAS</h2> <a href="https://maps.app.goo.gl/WzxsRbBWaaFfsXqa9" target="_blank" class="map-link">
@@ -190,20 +202,82 @@
         </section>
 
     <footer>
-
         <h3>MAXI-TEC</h3>
+        <p>Software y sitios web.</p>
 
-        <p>
-            Software y sitios web.
-        </p>
 
-        <span>
-            © 2026 Todos los derechos reservados.
-        </span>
-
+        <a href="#" id="openModal" class="footer-legal">© 2026 Todos los derechos y condiciones.</a>
     </footer>
-<a href="https://wa.me/5493804886019" class="whatsapp" target="_blank">💬</a>
-    <script src="script.js"></script>
 
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close" id="closeModal">&times;</span>
+            <h2>Términos y Condiciones</h2>
+            <div class="modal-body">
+                <p><strong>Última actualización:</strong> 16 de junio de 2026</p>
+                <p>Bienvenido a MAXI-TEC. Al acceder y utilizar este sitio web,voluntariamente usted esta dandonos datos personales. Si no estás de acuerdo con alguna parte, por favor no utilices nuestros servicios.Por lo que se dictaran los siguientes derechos de privacidad y condicionamiento.
+                MAXI TEC («nosotros», «nuestro» o «nos») se 
+                compromete a proteger su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y 
+                protegemos su información cuando visita nuestro sitio web (el «Sitio») o utiliza nuestros servicios.
+                </p>
+                <h3>Informacion que recopilamos </h3>
+                <p> Lo siguiente es informacion que solo nos proporciono usted voluntariamente para llevar a cabo nuestros servicios :</p>
+                <p> 
+                *Datos personales: Nombre,Correo Electronico,Numero de Telefono,Empresa; Son datos que nos proporcia usted al utilizar la pagina web<p></p>
+                <p>
+                *Datos Derivados: Información que nuestros servidores recopilan automáticamente cuando usted accede al Sitio, 
+                como su dirección IP, tipo de navegador, sistema operativo, horas de acceso y las páginas que ha visitado.
+                <p> 
+                <p> 
+                *Datos de terceros: Información procedente de terceros, como plataformas de redes sociales, cuando usted interactúa con nosotros a través de dichas plataformas.    
+                <p>
+                </p>
+
+                <h3> Como utilizamos su informacion</h3>
+                <p>-Cumplir con las obligaciones legales.</p>
+                <p>-Tramitamos sus consultas o solicitudes de presupuesto.</p>
+                <p>-Detectar y solucionar problemas tecnicos.</p>
+                <p>-Determinar a traves de un analisis nuestras estadisticas de busqueda y visita.   </p>
+                <p>-Mantener un contacto estrecho y direncto ante un problema.</p>
+
+                <h3>Servicios terceros</h3>
+                <p>Nuestra pagina web utilizas servicios de terceros con su informacion </p>
+                <p>-FormSpree: Para poder comunicarnos en el mail o numero de telefono ante su consulta. </p>
+                <p>-Git Hub: Donde se recopila la informacion de usted y donde la pagina web se mantiene abierto.</p>
+                <p>-Google Analytics: Utilizamos Google Analytics para analizar el tráfico del sitio web y el comportamiento de los usuarios. Google Analytics 
+                    puede recopilar información como su dirección IP, tipo de navegador y páginas visitadas.</p>
+                <p>-Google Tag Manager: Utilizamos Google Tag Manager para gestionar las etiquetas del sitio web y los scripts de seguimiento.</p>
+                <p>Estos mismo servicios tienen su privacidad y condicionamiento.</p>
+
+                <h3>Seguridad </h3>
+                <p>Utilizamos medidas de seguridad administrativas, técnicas y físicas para proteger su información personal. Si bien hemos tomado medidas razonables para proteger la información personal 
+                    que nos proporciona, tenga en cuenta que, a pesar de nuestros esfuerzos, ninguna medida de seguridad 
+                    es perfecta ni impenetrable, y ningún método de transmisión de datos puede garantizarse contra cualquier interceptación u otro tipo de uso indebido.</p>
+
+                <h3>Sus Derechos</h3>
+                <p>Dependiendo de su ubicación, usted puede tener ciertos derechos con respecto a su información personal, entre ellos:</p>
+                <p>*Derecho a su informacion Personal.</p>
+                <p>*Derecho a corregir su informacion personal.</p>
+                <p>*Derecho a solicitar la elimincion de su informacion personal.</p>
+                <p>*Derecho a la portabilidad de datos.</p>
+                <p>*Derecho a oponerse al tratamiento de su informacion personal.</p>
+                <p>Areas de servicio: Argetina, La Rioja</p>
+                <h3>Derecho de paginas usadas </h3>
+                <p>Todas los gif principales para la pagina fueron sacada de https://medium.com/data-science/face-detection-recognition-and-emotion-detection-in-8-lines-of-code-b2ce32d4d5de (Reconocimiento Facial)
+                    y https://cinde.es/blog/lenguajes-de-programacion-cuando-como-y-porque/amp/(Fondo de la pagina)</p>
+                    
+                <h3>Uso del Sitio</h3>
+                <p>Este sitio solo ofrece únicamente  servicio digital emprendimientos profesional con el objetivo de generar comodidad a tu 
+                    emprendimiento y lograr tener experiencia en el mundo de la progamacion 
+                </p>
+                <p>Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios serán efectivos inmediatamente después de su publicación.</p>
+                <p>Para cualquier duda, contáctanos a través de nuestro formulario de contacto.</p>
+                <h3>Contacto</h3>
+                <p>Ante alguna inquetud puede comunicarse al 3804886019 o mail: maximoate2006@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
