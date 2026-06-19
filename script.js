@@ -1,9 +1,7 @@
-// Código anterior se mantiene igual
 const projectsBtn = document.getElementById("projects-btn");
 const projectsNotebook = document.getElementById("projects-notebook");
 const reveals = document.querySelectorAll(".reveal");
 const contactForm= document.querySelector('.contact-form')
-
 
 
 if (projectsBtn && projectsNotebook) {
@@ -42,7 +40,6 @@ const imagenesAtom = [
 
 loadStaticGallery(imagenesAtom, "Evidencias/atom/", "atom-preview");
 
-/* ===== NUEVO: Control del modal de Términos ===== */
 const modalOverlay = document.getElementById("modalOverlay");
 const openModalLink = document.getElementById("openModal");
 const closeModalBtn = document.getElementById("closeModal");
@@ -82,6 +79,7 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
+
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         const email = this.querySelector('input[name="email"]').value.trim();
@@ -92,3 +90,4 @@ if (contactForm) {
         }
     });
 }
+
