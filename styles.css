@@ -169,6 +169,7 @@ body{
     border-radius:10px;
     background:#0D1B2A;
     color:white;
+    font-family: 'Inter', sans-serif;
 }
 
 .contact-form button{
@@ -585,8 +586,10 @@ footer{
 .contact-subtitle {
     text-align: center;
     font-size: 1.1rem;
-    color: #555; 
-    margin-bottom: 2rem; 
+    color: #B87333; 
+    margin-bottom: 2rem;
+    font-family: Verdana, sans-serif;
+     
 }
 .bg-gif {
     position: fixed;
@@ -628,4 +631,13 @@ footer{
     height: auto;
     border-radius: 4px;
     vertical-align: middle;
+}
+
+.archivo-subido {
+    font-size: 14px;
+    color: #666;
+}
+
+.archivo-subido span {
+    cursor: pointer;
 }

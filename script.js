@@ -2,6 +2,7 @@ const projectsBtn = document.getElementById("projects-btn");
 const projectsNotebook = document.getElementById("projects-notebook");
 const reveals = document.querySelectorAll(".reveal");
 const contactForm= document.querySelector('.contact-form')
+const archivoInput = document.querySelector('input[name="archivo"]');
 
 
 if (projectsBtn && projectsNotebook) {
@@ -91,3 +92,12 @@ if (contactForm) {
     });
 }
 
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    const archivoInput = this.querySelector('#archivo');
+    if (archivoInput.files.length > 0) {
+
+      console.log('Se han seleccionado archivos:', archivoInput.files);
+    }
+  });
+}
